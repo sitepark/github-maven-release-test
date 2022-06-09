@@ -22,9 +22,10 @@ jobs:
         with:
           git-release-bot-name: "sitepark-bot"
           git-release-bot-email: "github@sitepark.com"
+          release-branch-name: "main"
 
           maven-args: "-Dmaven.javadoc.skip=true -DskipTests -DskipITs -Ddockerfile.skip -DdockerCompose.skip -Dmaven.deploy.skip=true"
-          maven-options: "-DbranchName=main"
+          #maven-options: "-DbranchName=main"
           #maven-servers: '[{"id": "serverId1", "username": "username", "password": "password", "privateKey": "test", "passphrase": "testes"}, {"id": "serverId2", "username": "username2", "password": "password2"}]'
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
