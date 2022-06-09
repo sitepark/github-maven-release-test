@@ -22,21 +22,10 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:git@github.com:sitepark-com/ies-contentrepository-core.git</connection>
-		<developerConnection>scm:git:git@github.com:sitepark-com/ies-contentrepository-core.git</developerConnection>
-		<url>https://github.com/sitepark-com/ies-contentrepository-core</url>
+		<connection>scm:git:git@github.com:sitepark-com/github-maven-release-test.git</connection>
+		<developerConnection>scm:git:git@github.com:sitepark-com/github-maven-release-test.git</developerConnection>
+		<url>https://github.com/sitepark-com/github-maven-release-test</url>
 	</scm>
-
-	<distributionManagement>
-		<repository>
-			<id>release</id>
-			<url>https://develop.sitepark.com/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshot</id>
-			<url>https://develop.sitepark.com/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 	<dependencyManagement>
 		<dependencies>
