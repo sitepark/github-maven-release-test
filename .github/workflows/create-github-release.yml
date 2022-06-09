@@ -6,7 +6,6 @@ on:
     tags:
       - "[0-9]+.[0-9]+.[0-9]+" # Push events to matching ,[0-9]+.[0-9]+.[0-9]+ i.e. 1.0.0, 20.15.10
 
-
 jobs:
   build:
     name: Create Release
