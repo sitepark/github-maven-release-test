@@ -13,7 +13,7 @@ jobs:
         uses: Helmisek/conventional-changelog-generator@v1.0.6-release
         with:
            repo-token: ${{ secrets.GITHUB_TOKEN }}
-
+           commit-types: feat:Features,fix:Bug Fixes,build:Build,chore:Chore
       - name: Create Github Release
         uses: actions/create-release@v1
         #if: ${{ steps.changelog.changelog = '' }}
