@@ -12,7 +12,7 @@ jobs:
         id: changelog
         uses: Helmisek/conventional-changelog-generator@v1.0.6-release
         with:
-           token: ${{ secrets.GITHUB_TOKEN }}
+           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Github Release
         uses: actions/create-release@v1
