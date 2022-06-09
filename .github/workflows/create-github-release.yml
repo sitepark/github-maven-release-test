@@ -1,0 +1,26 @@
+name: Create-GitHub-Release
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: Helmisek/conventional-changelog-generator@v1.0.6-release
+        with:
+           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Github Release
+        uses: actions/create-release@v1
+        #if: ${{ steps.changelog.changelog = '' }}
+        env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+           tag_name: ${{ github.ref }}
+           release_name: Release ${{ github.ref }}
+           body: ${{ steps.changelog.changelog }}
+
