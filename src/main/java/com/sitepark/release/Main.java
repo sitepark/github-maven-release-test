@@ -1,5 +1,8 @@
 package com.sitepark.release;
 
+/**
+ * Commandline Interface to greet someone
+ */
 @SuppressWarnings("PMD")
 public class Main {
 
