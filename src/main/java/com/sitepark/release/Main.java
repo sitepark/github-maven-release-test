@@ -6,14 +6,16 @@ public class Main {
 	public static void main(String[] args) {
 		Main main = new Main();
 		if (args.length > 0) {
-			main.hello(args[0]);
+			main.hello(args);
 		} else {
 			main.usage();
 		}
 	}
 
-	private void hello(String name) {
-		System.out.println("Hello " + name);
+	private void hello(String... names) {
+		for (String name : names) {
+			System.out.println("Hello " + name);
+		}
 	}
 
 	private void usage() {
