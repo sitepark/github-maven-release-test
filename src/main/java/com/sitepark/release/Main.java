@@ -17,6 +17,6 @@ public class Main {
 	}
 
 	private void usage() {
-		System.out.println("main [name]");
+		System.out.println("usage: main [name]");
 	}
 }
