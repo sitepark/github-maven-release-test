@@ -5,10 +5,18 @@ public class Main {
 
 	public static void main(String[] args) {
 		Main main = new Main();
-		main.hello();
+		if (args.length > 0) {
+			main.hello(args[0]);
+		} else {
+			main.usage();
+		}
 	}
 
-	private void hello() {
-		System.out.println("Hello");
+	private void hello(String name) {
+		System.out.println("Hello " + name);
+	}
+
+	private void usage() {
+		System.out.println("main [name]");
 	}
 }
