@@ -34,20 +34,3 @@ jobs:
           gpg-key-id: ${{ secrets.GPG_KEY_ID }}
           gpg-key: ${{ secrets.GPG_KEY }}
 
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: Helmisek/conventional-changelog-generator@v1.0.6-release
-        with:
-           github-token: ${{ secrets.github_token }}
-           output-file: "false"
-
-      - name: Create Github Release
-        uses: actions/create-release@v1
-        #if: ${{ steps.changelog.changelog = '' }}
-        env:
-           GITHUB_TOKEN: ${{ secrets.github_token }}
-        with:
-           tag_name: ${{ github.ref }}
-           release_name: Release ${{ github.ref }}
-           body: ${{ steps.changelog.changelog }}
-
