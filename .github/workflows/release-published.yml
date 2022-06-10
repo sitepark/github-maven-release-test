@@ -1,0 +1,14 @@
+name: Release-Published
+
+on: release:
+   types: [published]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Publish Maven Artifact
+        run:
+           echo "publish maven artifact $GITHUB_REF"
