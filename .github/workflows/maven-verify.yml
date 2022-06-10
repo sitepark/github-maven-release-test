@@ -17,10 +17,14 @@ jobs:
            filename: 'pom.xml'
            expression: '//project/properties/maven.compiler.release/text()'
 
+      - name: Fake JDK Version
+        id: project
+        run: echo ::set-output name=jdk::11
+
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: ${{ jdk.result }} 
+          java-version: ${{ project.jdk }} 
           distribution: 'adopt'
           cache: 'maven'
           
