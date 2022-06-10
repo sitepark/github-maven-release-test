@@ -28,7 +28,7 @@ public class Main {
 	}
 
 	/**
-	 * Print usage
+	 * Print usage blub
 	 */
 	private void usage() {
 		System.out.println("greet user");
