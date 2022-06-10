@@ -17,7 +17,7 @@ jobs:
 
       - name: Extract GAV
         id: extract_gav
-        uses: andreacomo/maven-gav-extractor@v1o
+        uses: andreacomo/maven-gav-extractor@v1
 
       - name: Parse semver string
         id: semver_parser
