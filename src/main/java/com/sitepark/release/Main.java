@@ -24,6 +24,9 @@ public class Main {
 		}
 	}
 
+	/**
+	 * Print usage
+	 */
 	private void usage() {
 		System.out.println("usage: main [name]");
 	}
