@@ -1,4 +1,4 @@
-name: Verify
+name: Maven Verify
 
 on: [push]
 

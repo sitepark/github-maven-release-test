@@ -1,4 +1,4 @@
-name: Hotfix
+name: Maven Release
 
 on: workflow_dispatch
 
