@@ -1,12 +1,7 @@
 name: Release-Published
 
 on:
-   release:
-      types:
-         - published
-         - created
-         - edited
-         - deleted
+   release
 
 jobs:
   build:
