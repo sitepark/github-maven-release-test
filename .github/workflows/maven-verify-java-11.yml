@@ -10,17 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Get JDK Version from pom.xml
-        id: jdk
-        uses: QwerMike/xpath-action@v1
-        with:
-           filename: 'pom.xml'
-           expression: '//project/properties/maven.compiler.release/text()'
-
-      - name: Fake JDK Version
-        id: project
-        run: echo ::set-output name=jdk::11
-
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
