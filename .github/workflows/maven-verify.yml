@@ -24,7 +24,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: ${{ project.jdk }} 
+          java-version: '11'
           distribution: 'adopt'
           cache: 'maven'
           
