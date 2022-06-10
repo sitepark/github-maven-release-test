@@ -14,8 +14,8 @@ jobs:
         id: jdk
         uses: QwerMike/xpath-action@v1
         with:
-        filename: 'pom.xml'
-        expression: '//project/properties/maven.compiler.release/text()'
+           filename: 'pom.xml'
+           expression: '//project/properties/maven.compiler.release/text()'
 
       - name: Set up JDK
         uses: actions/setup-java@v3
