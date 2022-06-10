@@ -9,10 +9,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 11
+
+      - name: Get JDK Version from pom.xml
+        id: jdk
+        uses: QwerMike/xpath-action@v1
+        with:
+        filename: 'pom.xml'
+        expression: '//project/properties/maven.compiler.release/text()'
+
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '11'
+          java-version: ${{ jdk.result }} 
           distribution: 'adopt'
           cache: 'maven'
           
