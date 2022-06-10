@@ -3,7 +3,7 @@
 
 	<groupId>com.sitepark.github</groupId>
 	<artifactId>github-maven-release-test</artifactId>
-	<version>1.7.0</version>
+	<version>1.8.0-SNAPSHOT</version>
 	<name>Release-Test for maven projects</name>
 	<description>Test maven releases with github actions</description>
 
@@ -25,7 +25,7 @@
 		<connection>scm:git:git@github.com:sitepark-com/github-maven-release-test.git</connection>
 		<developerConnection>scm:git:git@github.com:sitepark-com/github-maven-release-test.git</developerConnection>
 		<url>https://github.com/sitepark-com/github-maven-release-test</url>
-	  <tag>1.7.0</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	<dependencyManagement>
