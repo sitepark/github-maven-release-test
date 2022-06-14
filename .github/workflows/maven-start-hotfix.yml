@@ -1,0 +1,10 @@
+name: Start Maven Hotfix
+
+on: workflow_dispatch
+
+jobs:
+  start-hotfix:
+    uses: sitepark-com/tproject-workflow/.github/workflows/maven-start-hotfix.yml@main
+    with:
+      version: ${{ github.ref }}
+
