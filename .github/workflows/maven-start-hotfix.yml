@@ -6,5 +6,5 @@ jobs:
   start-hotfix:
     uses: sitepark-com/project-workflow/.github/workflows/maven-start-hotfix.yml@main
     with:
-      version: ${{ github.ref }}
+      ref: ${{ github.ref }}
 
