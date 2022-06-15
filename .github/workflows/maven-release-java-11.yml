@@ -3,6 +3,6 @@ name: ▶ Maven Release
 on: workflow_dispatch
 
 jobs:
-  create-github-release:
+  release:
     uses: sitepark-com/project-workflow/.github/workflows/maven-release-java-11.yml@main
 
