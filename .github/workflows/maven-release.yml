@@ -14,5 +14,5 @@ jobs:
       GPG_KEY: ${{ secrets.GPG_KEY }}
       MVN_REPO_SERVERS: ${{ secrets.MVN_REPO_SERVERS }}
       MVN_REPO_SERVER_ID: ${{ secrets.MVN_REPO_SERVER_ID }}
-      MVN_REPO_SERVER_URL: ${{ secrets.MVN_REPO_SERVER_URL }}
+      MVN_REPO_SERVER_RELEASE_URL: ${{ secrets.MVN_REPO_SERVER_RELEASE_URL }}
 

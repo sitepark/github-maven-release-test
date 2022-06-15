@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.sitepark.ies</groupId>
-        <artifactId>ies-contentrepository-core</artifactId>
+        <artifactId>ies-release-test</artifactId>
 	<version>1.19.0-SNAPSHOT</version>
 	<name>Release-Test for maven projects</name>
 	<description>Test maven releases with github actions</description>
