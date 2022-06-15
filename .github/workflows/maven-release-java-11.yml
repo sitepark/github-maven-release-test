@@ -5,4 +5,8 @@ on: workflow_dispatch
 jobs:
   release:
     uses: sitepark-com/project-workflow/.github/workflows/maven-release-java-11.yml@main
+    secrets:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+      GPG_KEY: ${{ secrets.GPG_KEY }}
 
