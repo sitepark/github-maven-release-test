@@ -1,0 +1,15 @@
+name: (📡) Maven Deploy Snapshot
+
+on:
+   - push
+   - workflow_dispatch
+
+jobs:
+  release:
+    uses: sitepark-com/project-workflow/.github/workflows/maven-deploy-snapshot.yml@main
+    secrets:
+      MVN_REPO_SERVER_USERNAME: ${{ secrets.MVN_REPO_SERVER_USERNAME }}
+      MVN_REPO_SERVER_PASSWORD: ${{ secrets.MVN_REPO_SERVER_PASSWORD }}
+      MVN_REPO_SERVER_ID: ${{ secrets.MVN_REPO_SERVER_ID }}
+      MVN_REPO_SERVER_RELEASE_URL: ${{ secrets.MVN_REPO_SERVER_RELEASE_URL }}
+
