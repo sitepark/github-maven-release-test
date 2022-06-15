@@ -1,0 +1,10 @@
+name: (📡) Maven Verify
+
+on:
+   - push
+   - workflow_dispatch
+
+jobs:
+  verify:
+    uses: sitepark-com/project-workflow/.github/workflows/maven-verify.yml@main
+
