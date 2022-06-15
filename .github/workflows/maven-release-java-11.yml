@@ -1,4 +1,4 @@
-name: Maven Release
+name: ▶ Maven Release
 
 on: workflow_dispatch
 

@@ -1,4 +1,4 @@
-name: Start Maven Hotfix
+name: ▶ Start Maven Hotfix
 
 on: workflow_dispatch
 

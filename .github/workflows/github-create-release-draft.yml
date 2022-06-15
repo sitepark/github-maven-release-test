@@ -1,4 +1,4 @@
-name: Create GitHub Release Draft
+name: 📡 Create GitHub Release Draft
 
 on:
   push:
