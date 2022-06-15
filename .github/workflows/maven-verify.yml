@@ -1,8 +1,10 @@
 name: (📡) Maven Verify
 
 on:
-   - push
-   - workflow_dispatch
+  push:
+     branches-ignore:
+     - 'main'
+  workflow_dispatch:
 
 jobs:
   verify:
