@@ -20,6 +20,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>11</maven.compiler.release>
 		<gpg.skip>true</gpg.skip>
+		<checkstyle.failOnError>true</checkstyle.failOnError>
 	</properties>
 
 	<scm>
@@ -213,7 +214,7 @@
 					<configLocation>checkstyle.xml</configLocation>
 					<encoding>UTF-8</encoding>
 					<consoleOutput>true</consoleOutput>
-					<failsOnError>true</failsOnError>
+					<failsOnError>${checkstyle.failOnError}</failsOnError>
 					<linkXRef>false</linkXRef>
 				</configuration>
 				<executions>
