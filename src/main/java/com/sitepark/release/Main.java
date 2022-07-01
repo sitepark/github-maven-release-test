@@ -13,6 +13,7 @@ public class Main {
 		Main main = new Main();
 		if (args.length > 0) {
 			main.hello(args);
+			main.newFunction();
 		} else {
 			main.usage();
 		}
