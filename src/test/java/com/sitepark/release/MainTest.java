@@ -31,7 +31,8 @@ class MainTest {
 	@Test
 	void test() {
 		Main.main(new String[] { "Peter" });
-		assertEquals("Hello Peter\ndo something\n", this.outContent.toString(), "wrong output");
+		//assertEquals("Hello Peter\ndo something\n", this.outContent.toString(), "wrong output");
+		assertEquals("Hello Peter\n", this.outContent.toString(), "wrong output");
 	}
 
 }
