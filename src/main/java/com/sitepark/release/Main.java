@@ -9,7 +9,7 @@ public class Main {
 	/**
 	 * main
 	 */
-  public static void main(String[] args) {
+	public static void main(String[] args) {
 		Main main = new Main();
 		if (args.length > 0) {
 			main.hello(args);
