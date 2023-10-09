@@ -13,6 +13,7 @@ public class Main {
 		Main main = new Main();
 		if (args.length > 0) {
 			main.hello(args);
+			main.newFunction();
 		} else {
 			main.usage();
 		}
@@ -33,5 +34,9 @@ public class Main {
 	private void usage() {
 		System.out.println("greet user");
 		System.out.println("usage: main [name]");
+	}
+
+	private void newFunction() {
+		System.out.println("do something");
 	}
 }
