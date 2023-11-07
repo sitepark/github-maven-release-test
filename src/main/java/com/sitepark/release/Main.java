@@ -34,4 +34,8 @@ public class Main {
 		System.out.println("greet user");
 		System.out.println("usage: main [name]");
 	}
+
+	private void newFunction() {
+		System.out.println("do something");
+	}
 }
