@@ -59,7 +59,7 @@
 		<dependency>
 			<groupId>org.eclipse.jdt</groupId>
 			<artifactId>org.eclipse.jdt.annotation</artifactId>
-			<version>2.2.800</version>
+			<version>2.3.0</version>
 		</dependency>
 
 		<!--
@@ -209,7 +209,7 @@
 							<reflowLongStrings>true</reflowLongStrings>
 							<formatJavadoc>false</formatJavadoc>
 						</googleJavaFormat>
-						<formatAnnotations></formatAnnotations>
+						<formatAnnotations/>
 					</java>
 					<pom>
 						<!-- These are the defaults, you can override if you want -->
@@ -250,7 +250,7 @@
 							<reflowLongStrings>true</reflowLongStrings>
 							<formatJavadoc>false</formatJavadoc>
 						</googleJavaFormat>
-						<formatAnnotations></formatAnnotations>
+						<formatAnnotations/>
 					</java>
 					<pom>
 						<!-- These are the defaults, you can override if you want -->
@@ -285,13 +285,13 @@
 								<pluginExecutionFilter>
 									<groupId>com.diffplug.spotless</groupId>
 									<artifactId>spotless-maven-plugin</artifactId>
-									<versionRange></versionRange>
+									<versionRange/>
 									<goals>
 										<goal>check</goal>
 									</goals>
 								</pluginExecutionFilter>
 								<action>
-									<ignore></ignore>
+									<ignore/>
 								</action>
 							</pluginExecution>
 						</pluginExecutions>
