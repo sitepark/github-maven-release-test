@@ -7,6 +7,12 @@
 	<version>1.45.0-SNAPSHOT</version>
 	<name>Release-Test for maven projects</name>
 	<description>Test maven releases with github actions</description>
+	<url>https://github.com/sitepark/github-maven-release-test</url>
+
+	<organization>
+		<name>Sitepark</name>
+		<url>https://www.sitepark.com</url>
+	</organization>
 
 	<licenses>
 		<license>
@@ -15,11 +21,26 @@
 		</license>
 	</licenses>
 
+	<developers>
+		<developer>
+			<id>veltrup@sitepark</id>
+			<name>Holger Veltrup</name>
+			<email>veltrup@sitepark.com</email>
+			<url>https://github.com/sitepark-veltrup</url>
+			<organization>Sitepark</organization>
+			<organizationUrl>https://www.sitepark.com</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>Europe/Berlin</timezone>
+		</developer>
+	</developers>
+
 	<scm>
-		<connection>scm:git:git@github.com:sitepark-com/github-maven-release-test.git</connection>
-		<developerConnection>scm:git:git@github.com:sitepark-com/github-maven-release-test.git</developerConnection>
+		<connection>scm:git:git@github.com:sitepark/github-maven-release-test.git</connection>
+		<developerConnection>scm:git:git@github.com:sitepark/github-maven-release-test.git</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/sitepark-com/github-maven-release-test</url>
+		<url>https://github.com/sitepark/github-maven-release-test</url>
 	</scm>
 
 	<properties>
