@@ -362,11 +362,11 @@
 			</plugin>
 		</plugins>
 	</build>
-        <profiles>
-                <profile>
-                        <id>publish-release</id>
-                        <build>
-                                <plugins>
+	<profiles>
+		<profile>
+			<id>publish-release</id>
+			<build>
+				<plugins>
 					<plugin>
 						<groupId>org.sonatype.central</groupId>
 						<artifactId>central-publishing-maven-plugin</artifactId>
@@ -376,8 +376,8 @@
 							<publishingServerId>central</publishingServerId>
 						</configuration>
 					</plugin>
-                                </plugins>
-                        </build>
-                </profile>
-        </profiles>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
