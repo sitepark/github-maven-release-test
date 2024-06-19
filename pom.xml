@@ -4,7 +4,7 @@
 
 	<groupId>com.sitepark.ies</groupId>
 	<artifactId>ies-release-test</artifactId>
-	<version>1.46.0</version>
+	<version>1.47.0-SNAPSHOT</version>
 	<name>Release-Test for maven projects</name>
 	<description>Test maven releases with github actions</description>
 	<url>https://github.com/sitepark/github-maven-release-test</url>
@@ -39,7 +39,7 @@
 	<scm>
 		<connection>scm:git:git@github.com:sitepark/github-maven-release-test.git</connection>
 		<developerConnection>scm:git:git@github.com:sitepark/github-maven-release-test.git</developerConnection>
-		<tag>1.46.0</tag>
+		<tag>HEAD</tag>
 		<url>https://github.com/sitepark/github-maven-release-test</url>
 	</scm>
 
@@ -230,7 +230,7 @@
 							<reflowLongStrings>true</reflowLongStrings>
 							<formatJavadoc>false</formatJavadoc>
 						</googleJavaFormat>
-						<formatAnnotations />
+						<formatAnnotations></formatAnnotations>
 					</java>
 					<pom>
 						<!-- These are the defaults, you can override if you want -->
@@ -271,7 +271,7 @@
 							<reflowLongStrings>true</reflowLongStrings>
 							<formatJavadoc>false</formatJavadoc>
 						</googleJavaFormat>
-						<formatAnnotations />
+						<formatAnnotations></formatAnnotations>
 					</java>
 					<pom>
 						<!-- These are the defaults, you can override if you want -->
@@ -306,13 +306,13 @@
 								<pluginExecutionFilter>
 									<groupId>com.diffplug.spotless</groupId>
 									<artifactId>spotless-maven-plugin</artifactId>
-									<versionRange />
+									<versionRange></versionRange>
 									<goals>
 										<goal>check</goal>
 									</goals>
 								</pluginExecutionFilter>
 								<action>
-									<ignore />
+									<ignore></ignore>
 								</action>
 							</pluginExecution>
 						</pluginExecutions>
