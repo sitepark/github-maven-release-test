@@ -4,7 +4,6 @@ on: workflow_dispatch
 
 jobs:
   release:
-    #uses: sitepark/github-project-workflow/.github/workflows/maven-release.yml@release/1.x
     uses: sitepark/github-project-workflow/.github/workflows/maven-release.yml@main
     with:
       botName: "sitepark-bot"
@@ -16,4 +15,3 @@ jobs:
       MVN_REPO_RELEASE_SERVER_ID: ${{ secrets.MVN_REPO_RELEASE_SERVER_ID }}
       MVN_REPO_RELEASE_SERVER_USERNAME: ${{ secrets.MVN_REPO_RELEASE_SERVER_USERNAME }}
       MVN_REPO_RELEASE_SERVER_PASSWORD: ${{ secrets.MVN_REPO_RELEASE_SERVER_PASSWORD }}
-
