@@ -2,7 +2,7 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
-    directory: "/test-pom"
+    directory: "/test-pom2"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 100  # nur zum testen
