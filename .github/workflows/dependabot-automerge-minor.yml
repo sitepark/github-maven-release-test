@@ -1,4 +1,4 @@
-name: (🔨) Auto-Merge Dependabot Minor Updates
+name: (📡) Auto-Merge Dependabot Minor Updates
 
 on:
   pull_request:
@@ -24,4 +24,5 @@ jobs:
         if: steps.metadata.outputs.update-type == 'version-update:semver-minor'
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
+          pull-request-number: ${{ github.event.pull_request.number }}
           merge-method: squash
