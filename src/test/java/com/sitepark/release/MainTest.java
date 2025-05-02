@@ -12,8 +12,8 @@ class MainTest {
 
   private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
   private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
-  private final PrintStream originalOut = System.out;
-  private final PrintStream originalErr = System.err;
+  private static final PrintStream OUT = System.out;
+  private static final PrintStream ERR = System.err;
 
   @BeforeEach
   public void setUpStreams() {
@@ -23,8 +23,8 @@ class MainTest {
 
   @AfterEach
   public void restoreStreams() {
-    System.setOut(originalOut);
-    System.setErr(originalErr);
+    System.setOut(OUT);
+    System.setErr(ERR);
   }
 
   @Test
