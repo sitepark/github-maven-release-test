@@ -6,4 +6,9 @@ on:
 
 jobs:
   automerge:
-    uses: sitepark/github-project-workflow/.github/workflows/dependabot-automerge-minor.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print github.actor
+        run: echo "Actor is ${{ github.actor }}"
+
+        #    uses: sitepark/github-project-workflow/.github/workflows/dependabot-automerge-minor.yml@main
