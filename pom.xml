@@ -44,8 +44,8 @@
 	</scm>
 
 	<properties>
-		<junit.version>5.10.2</junit.version>
-		<spotbugs.version>4.8.2</spotbugs.version>
+		<junit.version>5.12.2</junit.version>
+		<spotbugs.version>4.9.3</spotbugs.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>11</maven.compiler.release>
 		<gpg.skip>true</gpg.skip>
@@ -109,13 +109,13 @@
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-library</artifactId>
-			<version>2.2</version>
+			<version>3.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>5.9.0</version>
+			<version>5.17.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -124,12 +124,12 @@
 
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.12.0</version>
+				<version>3.14.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.2.5</version>
+				<version>3.5.3</version>
 			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
@@ -187,7 +187,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.6.3</version>
+				<version>3.11.2</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -201,7 +201,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>3.1.0</version>
+				<version>3.2.7</version>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
@@ -215,7 +215,7 @@
 			<plugin>
 				<groupId>com.diffplug.spotless</groupId>
 				<artifactId>spotless-maven-plugin</artifactId>
-				<version>2.43.0</version>
+				<version>2.44.4</version>
 				<configuration>
 					<!-- define a language-specific format -->
 					<java>
@@ -256,7 +256,7 @@
 			<plugin>
 				<groupId>com.diffplug.spotless</groupId>
 				<artifactId>spotless-maven-plugin</artifactId>
-				<version>2.43.0</version>
+				<version>2.44.4</version>
 				<configuration>
 					<!-- define a language-specific format -->
 					<java>
@@ -322,7 +322,7 @@
 			<plugin>
 				<groupId>com.github.spotbugs</groupId>
 				<artifactId>spotbugs-maven-plugin</artifactId>
-				<version>4.8.2.0</version>
+				<version>4.9.3.0</version>
 				<configuration>
 					<effort>Max</effort>
 					<threshold>Low</threshold>
@@ -351,7 +351,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-pmd-plugin</artifactId>
-				<version>3.21.0</version>
+				<version>3.26.0</version>
 				<configuration>
 					<rulesets>
 						<ruleset>pmd-ruleset.xml</ruleset>
@@ -375,7 +375,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>3.0.1</version>
+				<version>3.1.1</version>
 				<configuration>
 					<scmCommentPrefix>ci(release):</scmCommentPrefix>
 					<tagNameFormat>@{project.version}</tagNameFormat>
@@ -391,7 +391,7 @@
 					<plugin>
 						<groupId>org.sonatype.central</groupId>
 						<artifactId>central-publishing-maven-plugin</artifactId>
-						<version>0.5.0</version>
+						<version>0.7.0</version>
 						<extensions>true</extensions>
 						<configuration>
 							<publishingServerId>central</publishingServerId>
