@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-
+import java.nio.charset.StandardCharsets;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,8 +31,7 @@ class MainTest {
 	@Test
 	void test() {
 		Main.main(new String[] { "Peter" });
-		//assertEquals("Hello Peter\ndo something\n", this.outContent.toString(), "wrong output");
-		assertEquals("Hello Peter\n", this.outContent.toString(), "wrong output");
+		//assertEquals("Hello Peter\ndo something\n", this.outContent.toString(StandardCharsets.UTF_8), "wrong output");
+		assertEquals("Hello Peter\n", this.outContent.toString(StandardCharsets.UTF_8), "wrong output");
 	}
-
 }
