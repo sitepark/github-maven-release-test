@@ -19,14 +19,14 @@ public class Main {
 		}
 	}
 
-	/**
-	 * Print given Names
-	 */
-	private void hello(String... names) {
-		for (String name : names) {
-			System.out.println("Hello " + name);
-		}
-	}
+  /**
+   * Print given Names
+   */
+  private void hello(String... names) {
+    for (String name : names) {
+      System.out.println("Hello " + name);
+    }
+  }
 
 	/**
 	 * Print usage blub
