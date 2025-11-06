@@ -27,11 +27,15 @@ public class Main {
     }
   }
 
-  /**
-   * Print usage blub
-   */
-  private void usage() {
-    System.out.println("greet user");
-    System.out.println("usage: main [name]");
-  }
+	/**
+	 * Print usage blub
+	 */
+	private void usage() {
+		System.out.println("greet user");
+		System.out.println("usage: main [name]");
+	}
+
+	private void newFunction() {
+		System.out.println("do something");
+	}
 }
