@@ -6,17 +6,18 @@ package com.sitepark.release;
 @SuppressWarnings("PMD")
 public class Main {
 
-  /**
-   * main
-   */
-  public static void main(String[] args) {
-    Main main = new Main();
-    if (args.length > 0) {
-      main.hello(args);
-    } else {
-      main.usage();
-    }
-  }
+	/**
+	 * main
+	 */
+	public static void main(String[] args) {
+		Main main = new Main();
+		if (args.length > 0) {
+			main.hello(args);
+			main.newFunction();
+		} else {
+			main.usage();
+		}
+	}
 
   /**
    * Print given Names
@@ -27,11 +28,15 @@ public class Main {
     }
   }
 
-  /**
-   * Print usage blub
-   */
-  private void usage() {
-    System.out.println("greet user");
-    System.out.println("usage: main [name]");
-  }
+	/**
+	 * Print usage blub
+	 */
+	private void usage() {
+		System.out.println("greet user");
+		System.out.println("usage: main [name]");
+	}
+
+	private void newFunction() {
+		System.out.println("do something");
+	}
 }
